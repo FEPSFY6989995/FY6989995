@@ -272,7 +272,7 @@ function updateHighlight() {
     let active = null;
     links.forEach(link => {
         const heading = document.getElementById(decodeURIComponent(link.hash.slice(1)));
-        if (heading && heading.getBoundingClientRect().top <= 0) active = link;
+        if (heading && heading.getBoundingClientRect().top <= 10) active = link;
     });
     links.forEach(link => {link.closest('tr').classList.toggle('activeSection', link === active);});
 }
