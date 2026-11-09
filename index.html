@@ -15,6 +15,9 @@
       table td a {display: block; padding: 7px;} /* Pads text in cell */
       .sidebar tr:nth-child(odd) {background-color: white;}
       .sidebar tr:first-child {background-color: transparent;}
+
+      /* Highlight current section in Table of Contents */
+      .sidebar tr.activeSection td {background-color: #a3c9e8;}
   
       /* Smooth Scrolling From Table Links */
       html {scroll-behavior: smooth;}
@@ -257,7 +260,26 @@ Video Presentation, full width, MP4 file format
 </script>
 
   
-  <!-- Closing Tags -->
+
+
     </main>
+
+  <!-- Highlight current section in Table of Contents -->
+<script>
+const links = document.querySelectorAll('.sidebar table a[href^="#"]');
+
+function updateHighlight() {
+    let active = null;
+    links.forEach(link => {
+        const heading = document.getElementById(decodeURIComponent(link.hash.slice(1)));
+        if (heading && heading.getBoundingClientRect().top <= 0) active = link;
+    });
+    links.forEach(link => {link.closest('tr').classList.toggle('activeSection', link === active);});
+}
+
+window.addEventListener('scroll', updateHighlight, {passive: true});
+updateHighlight();
+</script>
+
 </body> 
 </html>
