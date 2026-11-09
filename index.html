@@ -32,9 +32,13 @@
       .pageLayout {display: flex; min-width: 0;}
       .pageLayout > main {min-width: 0; flex: 1;}
       .sidebar {width: 250px;flex-shrink: 0;background-color: rgb(210, 220, 230);}
+
+      /*Back to top button*/
+      .backToTop {display: block; width: fit-content; margin: 12px auto 0; padding: 8px 18px; background-color: #eeeeee; color: black; text-decoration: none; border-radius: 5px;}
+      .backToTop:hover {background-color: #bbbbbb;}
       
       /* Sticky Table of Contents */
-      .sidebar table {position: sticky;top: 50vh;transform: translateY(-50%);}
+      .sidebar .stickyContents {position: sticky; top: 50vh; transform: translateY(-50%);}
 
       /* Horizontal Dividers */
       .greyDivider {border: none; height: 3px; background-color: lightgrey;}
@@ -65,6 +69,7 @@
     <!-- Sidebar and Report Layout -->
     <div class="pageLayout">
     <aside class="sidebar">
+    <div class="stickyContents">
     <!-- Sidebar Contents start -->
       
     <!-- Table of contents -->
@@ -91,8 +96,12 @@
             <td><a href="#Video Presentation">Video Presentation</a></td>
         </tr>
     </table>
+    
+    <!-- Back to Top button -->
+    <a href="#" class="backToTop">↑ Back to Top</a>
       
      <!-- Sidebar Contents end -->
+    </div>
     </aside>
     <main style="margin: 30px;">
 
