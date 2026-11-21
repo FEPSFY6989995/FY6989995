@@ -46,6 +46,10 @@
       /* Paragraph Text */
       .ex1 {text-align: justify; white-space: pre-wrap}
       .mySlides {display:none;}
+
+      /* Figure Captions */
+      .figureCaptions {font-size: 14px; color: grey; text-align: center; font-style: italic;}
+
     </style>
 
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -112,7 +116,7 @@
     <h1 style="font-family: Calibri, Arial, sans-serif;">To What Extent Could Motorised Traction Systems Improve the Economics and Sustainability of Aircraft Ground Operations?</h1>
     
     <img src="dublinAirportQue3.png" alt="Aircraft queuing at Dublin Airport" style="width: 100%; max-width: 1200px; height: auto; display: block; margin: 0 auto;">
-    <p style="font-size: 12px; color: grey; text-align: center;"> Image credit: Author's own photograph. </p>
+     <p class="figureCaptions">Image credit: Author's own photograph.</p>
     
     <!-- Abstract --> 
     <hr class="greyDivider">
@@ -142,13 +146,43 @@ Global air passenger numbers are projected to grow by approximately 3.8% annuall
     <hr class="greyDivider">
     <h3 id="Analysis1">Integrated wheel-motor systems</h3>
     <pre class="ex1">
+<p>One solution is installing a motor system on the nose gear of aircraft to enable taxiing without use of the main engines <b>(Liu et al., 2024)</b>. The reduced main-engine operation of aircraft using this taxiing system can significantly decrease emissions and reduce fuel consumption by 68.2% during taxiing <b>(Maciejewska et al., 2025; Liu et al., 2024)</b>. Widespread electric taxiing could reduce global aviation fuel consumption by 846 million kg annually, although this is heavily dependant on aircraft type and operating conditions <b>(Groot and Roling, 2022; Knacker et al., 2026)</b>.</p>
 
+<p>Wheel motors could also reduce tyre wear by minimising the friction at touchdown, typically seen as a cloud of smoke, extending tyre lifespan and reducing replacement costs <b>(Li and Wang, 2026)</b>.</p>
+
+<p class="figureCaptions">Figure 1: Safran electric wheel motor prototype (Safran, n.d.)</p>
+
+<p>However, current electric wheel motor prototypes have a long list of drawbacks, such as slow operating speeds, large size, and most importantly, weight <b>(Salihu et al. 2021)</b>. For example, one full electric taxiing system prototype weighed in excess of 150 kg <b>(Liu et al., 2024)</b>, while in 2017, the promising Electric Green Taxiing System (EGTS) prototype by Safran and Honeywell weighed over 300 kg and protruded far from the wheel hub as shown in figure 1, which is a safety hazard for ground crew <b>(Liu et al., 2024)</b>. The increased aircraft weight has a large impact on airborne fuel consumption <b>(Salihu et al. 2021)</b>, meaning that the net yield could be small or even negative. Hence, electric motor technology may not yet be sufficient.</p>
+
+<p>On the other hand, hydraulic motor systems are more compact, accurately controllable and have a large power-to-weight ratio than electric systems. Hydraulic systems already have a well established use in airliners, such as flight control surfaces, retracting landing gear, braking systems, and other actuation systems <b>(Liu et al., 2024)</b>. Hence, making them potentially more easily to integrate and suitable for saving weight and space inside an airliner.</p>
+
+<p>In order to power wheel-motor systems a large amount of energy is needed, 200 kW estimated for taxiing the A319 along flat ground <b>(Keçeci et al., 2022)</b>. External fuel cells have been proposed to provide the plane with energy for taxiing while not adding extra weight to the flight <b>(Keçeci et al., 2022)</b>. However, the operation for attaching and removing fuel cells from airliners on the ground would need further consideration, potentially introducing operational delays.</p>
+
+<p class="figureCaptions">Figure 2: Diagram of APU and Motor system (Source: Liu et al., 2024)</p>
+
+<p>A second proposal suggests supplying energy from aircraft's auxiliary power unit (APU) to the wheel-motor as shown in figure 2 <b>(Liu et al., 2024; Keçeci et al., 2022; Safran, n.d.)</b>. The APU burns significantly less fuel compared to jet engines <b>(Keçeci et al., 2022)</b>. However, it is designed for low power operations such as lighting and air conditioning and is insufficient to provide the necessary locomotive power to taxi the aircraft <b>(Keçeci et al., 2022)</b>.</p>
+
+<p>Furthermore, Installing electric or hydraulic motor systems in landing gear introduces significant adjustments to aircraft architecture and consequently major engineering and certification challenges <b>(Salihu et al. 2021)</b>. Hence, onboard motor systems have some major challenges to overcome with no clear solutions currently presented, from increased aircraft weight counteracting fuel savings on the ground to the absence of a clear method of powering them.</p>
     </pre>
 
     <hr class="greyDivider">
     <h3 id="Analysis2">External towing systems — TaxiBot</h3>
     <pre class="ex1">
+<p>A second proposed solution is the use of external towing vehicles to taxi aircraft between the apron and runway <b>(Maciejewska et al., 2025; Salihu et al., 2021; easyJet, 2026)</b>. Unlike integrated wheel-motor systems, the additional equipment is not carried during flight, avoiding the associated additional in-flight fuel costs <b>(Salihu et al., 2021; Keçeci et al., 2022)</b>.</p>
 
+<p class="figureCaptions">Figure 3: TaxiBot vehicle towing an easyJet Airbus A320neo aircraft (easyJet, 2026)</p>
+
+<p>One promising development is TaxiBot, a semi-robotic tractor designed to tow aircraft entirely under its own power, without the use of the aircraft main engines <b>(easyJet, 2026; Maciejewska et al., 2025)</b>, while the aircraft systems are powered buy the APU <b>(easyJet, 2026)</b>. The first easyJet passenger flight to use TaxiBot during ground operations took place on 30 April 2026, using an A320neo aircraft at Amsterdam Schiphol Airport <b>(easyJet, 2026)</b>. Following successful automated taxiing deployment tests, three more easyJet Airbus A320neo aircraft are now being permanently fitted with TaxiBot compatibility hardware as part of the programme <b>(easyJet, 2026)</b>.</p>
+
+<p>The ecumenic effects appear to vary massively depending on the unique operations at each individual airport. Estimates range from a profit of approximately £75 per flight at JFK to a loss of £120 per flight at Honolulu <b>(Vaishnav, 2014)</b>. Hence, the technology may be more financially attractive at airports with longer average taxiing distances <b>(Groot and Roling, 2022)</b>. United States airports have consistently higher taxi times, offering greater potential savings than in Europe <b>(Groot and Roling, 2022)</b>.</p>
+
+<p>Research suggests that widespread use of electric towing vehicles could deliver considerable reductions in aviation emissions <b>(Salihu et al., 2021)</b>, Potentially reducing the fuel used for taxiing by up to 80% in some scenarios <b>(Maciejewska et al., 2025)</b>. However, Conventional diesel-powered towing vehicles still produce emissions <b>(Maciejewska et al., 2025)</b>. Taxibot is fully electric <b>(easyJet, 2026)</b>, which may reduce local air pollution but increase airport electricity demand <b>(Maciejewska et al., 2025)</b>. Therefore, the overall environmental benefit depends partly on how that electricity is generated <b>(Salihu et al., 2021)</b>.</p>
+
+<p>Some research suggests that existing towing vehicles may cause congestion issues at larger airports due to traveling more slowly than conventionally taxiing aircraft and potential additional time required to connect and disconnect towing vehicles <b>(Salihu et al., 2021)</b>. However, other sources suggest a lower net taxiing time due to the faster acceleration of e-tractors, stating that airport traffic will not be hindered <b>(Salihu et al., 2021)</b>. Furthermore, Unlike onboard traction systems, TaxiBot requires airports to have the necessary vehicles and infrastructure. This limits where it can be used, and there is currently limited research into planning <b>(Salihu et al., 2021)</b>. Hence, large scale operations of external towing systems require further investigation <b>(Salihu et al., 2021)</b>.</p>
+
+<p class="figureCaptions">Figure 4: TaxiBot operating sequence during aircraft taxi-in and taxi-out (Maciejewska et al., 2025)</p>
+
+<p>Operationally, commercial aircraft engines require 2–7 minutes running to warm-up before takeoff, depending on engine type and conditions <b>(Schiphol Airport, 2020)</b> as shown in figure 4. Hence, neither solution can completely eliminate main-engine operation during taxiing.</p>
     </pre>
 
    <!-- Conclusion -->
